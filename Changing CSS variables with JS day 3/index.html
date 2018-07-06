@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href='css/main.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+</head>
+
+<body>
+
+  <main>
+
+    <h1>Changing css variables with <span class='color'>JS</span> !</h1>
+    <label for="padding" >Padding:</label>
+    <input type='range' min='10' max='150' value='10' name='padding' data-sizing='px' id='padding'>
+    <label for="blur" >Blur:</label>
+    <input type='range' min='0' max='40' value='0' name='blur' data-sizing='px' id='blur'>
+    <label for="color" >Color:</label>
+    <input type="color" name='color' value='#fffd1c' id='color'>
+
+    <div class='container'>
+      <div class='blur'></div>
+    </div>
+
+  </main>
+
+  <script src='js/javascript.js'></script>
+
+</body>
+
+</html>

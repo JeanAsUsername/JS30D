@@ -1,0 +1,105 @@
+
+/* .formulario {
+
+  display: flex;
+  flex-direction: column;
+} */
+
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+
+  height: 100vh;
+
+}
+
+main {
+
+  height: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock {
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.clock__tape {
+
+  height: 300px;
+  width: 300px;
+  border: 6px dashed black;
+  border-radius: 50%;
+  display:flex;
+  position: relative;
+  align-items: center;
+
+}
+
+.seconds {
+
+  position: absolute;
+  width: 48%;
+  margin: 0 1%;
+  height: 6px;
+  background: rgb(65, 125, 255);
+  top: 50%;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  transform-origin: 100%;
+  transform: rotate(90deg)
+
+
+}
+
+.mins {
+
+  position: absolute;
+  width: 48%;
+  margin: 0 1%;
+  height: 6px;
+  background: black;
+  top: 50%;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  background: yellow;
+
+}
+
+.hours {
+
+  position: absolute;
+  width: 48%;
+  margin: 0 1%;
+  height: 6px;
+  background: rgb(165, 255, 116);
+  top: 50%;
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  transform-origin: 100%;
+  transform: rotate(90deg);
+
+}
+
+.dot {
+
+  position:absolute;
+  height: 30px;
+  width: 30px;
+  background: black;
+  border: 2px solid grey;
+  border-radius: 50%;
+
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>he</h1>
+
+</body>
+
+<script>
+  const secretCode = 'hello'
+  var press = []
+
+  function code(e) {
+
+    press.push(e.key)
+
+    press.splice(0, press.length - secretCode.length)
+
+    if (press.join('').includes(secretCode)) {
+      console.log('Acertaste !! Ve a celebrarlo con tus amigos :)')
+    }
+
+  }
+
+  window.addEventListener('keyup', code)
+
+
+
+</script>
+
+
+
+</html>
